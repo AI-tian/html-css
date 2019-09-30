@@ -1,0 +1,962 @@
+@charset "utf-8";
+/*中部第二部分开始 */
+#section1{
+	overflow:hidden;
+	width:100%;
+	background-color:#f9f9f9;
+}
+.mainbox{
+	position:relative;
+	background-color:#f9f9f9;
+}
+/* 左边广告图片开始 */
+.mainbox .mianleft{
+	position:absolute;
+	top:0;
+	left:-500px;
+	width:500px;
+	height:1000px;
+	z-index:99;
+}
+.mainbox .mianleft > a{
+	display:block;
+	width:100%;
+	height:1000px;
+	background-image:url(../images/section/mianleft.png);
+	background-position:right top;
+	background-repeat:no-repeat;
+
+}
+/* 左边广告图片结束 */
+/* 右边广告图片开始 */
+.mainbox .mianright{
+	position:absolute;
+	top:0;
+	right:-500px;
+	width:500px;
+	height:1000px;
+}
+.mainbox .mianright > a{
+	display:block;
+	width:100%;
+	height:1000px;
+	background-image:url(../images/section/mianright.png);
+	background-repeat:no-repeat;
+}
+/* 右边广告图片结束 */
+.mainbox .crazyupbox{
+	width:1200px;
+}
+/*左侧疯狂抢购盒子开始 */
+.crazyupbox .crazy-left{
+	float:left;
+	width:920px;
+	border:1px solid #ececec;
+	margin-top:10px;
+}
+/* 标题选项开始 */
+ .title-taB{
+	width:100%;
+	background-color:#f90;
+}
+ .title-taB > li{
+	float:left;
+	width:182px;
+	background-color:#f9f9f9;
+	border-top:2px solid #ececec;
+	border-bottom:1px solid #ececec;
+	border-left:1px solid #ececec;
+	border-right:1px solid #ececec;
+	color:#666;
+	font-size:16px;
+	line-height:35px;
+	font-family:"宋体";
+	text-align:center;
+	cursor:pointer;
+}
+ .title-taB > li:hover{
+	background-color:#fff;
+	border-top:2px solid #cc0000;
+	color:#cc0000;
+
+}
+/* 标题选项结束 */
+/* 疯狂抢购内容开始 */
+.crazy-left .crazybox-con{
+	float:left;
+	width:100%;
+	background-color:#fff;
+	border:1px solid #ececec;
+}
+.crazybox-con ul li{
+	position:relative;
+	float:left;
+	width:182px;
+	border:none;
+	margin:15px 0 18px 2px;
+}
+.crazybox-con ul li p{
+	font-size:12px;
+	line-height:12px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.crazybox-con ul li p a{
+	color:#666;
+}
+.crazybox-con ul li p a:hover{
+	color:#cc0000;
+	text-decoration:underline;
+}
+.crazybox-con ul li .price{
+	margin-left:5px;
+	color:#cc0000;
+	font-size:12px;
+}
+.crazybox-con ul li:hover{
+	border:none;
+}
+/* 疯狂抢购内容结束 */
+
+
+/* 右侧公告开始 */
+.crazyupbox .right-notice{
+	float:right;
+	width:270px;
+	border:1px solid #ececec;
+	margin-top:10px;
+}
+/* 公告信息开始 */
+.right-notice .notice-info{
+	width:100%;
+	background-color:#fff;
+	border:1px solid #ccc;
+}
+.notice-info .not:after{
+	content:'';
+	display:block;
+	clear:both;	
+}
+.notice-info .not > li{
+	width:133px;
+}
+.notice-info .notice-con{
+	width:250px;
+	height:105px;
+	margin:auto;
+}
+.notice-con > li{
+	float:left;
+	overflow:hidden;
+	width:124px;
+	margin:4px 0 0 0px;
+	font-size:12px;
+	text-align:center;
+	line-height:30px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.notice-con > li > a{
+	color:#666;
+}
+.notice-con > li > a:hover{
+	color:#f90;
+	text-decoration:underline;
+}
+/* 公告信息结束 */
+/* 公告广告轮播图开始 */
+ .notice-shuff{
+	position:relative;
+	width:100%;
+	height:150px;
+	margin-top:25px;
+	border:1px solid #ccc;
+}
+/* 右侧公告结束 */
+/* 广告小轮播图开始 */
+.adver-shuff{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.adver-shuff > li{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.adver-shuff > li > a{
+	position:absolute;
+	top:0;
+	left:0;
+	display:block;
+	width:100%;
+	height:100%;
+	z-index:10;
+}
+.notice-shuff .adver-tab{
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	z-index:999;
+}
+.adver-tab > span {
+	display:inline-block;;
+	width:15px;
+	height:15px;
+	background-color:#ccc;
+	border-radius:50%;
+	margin-right:10px;
+	cursor:pointer;
+}
+.adver-tab > span:nth-child(1){
+	background-color:#6d8ea1;
+}
+/* 广告小轮播图结束 */
+/*左侧疯狂抢购盒子结束 */
+/* 广告位置开始 */
+.mainbox .adver-position{
+	float:left;
+	width:100%;
+	height:125px;
+	background-color:#fff;
+	margin:8px 0px;
+}
+.adver-position .adver-positionpic{
+	float:left;
+	width:290px;
+	height:119px;
+	margin:7px 0px 0 80px;
+}
+/*广告位置结束 */
+/* 优惠推荐开始 */
+
+/*盒子标题开始 */
+.mainbox .prefer-ercomm{
+	position:relative;
+	float:left;
+	width:100%;
+}
+.titlepic1{
+	width:20px;
+	height:20px;
+}
+.wine-title{
+	width:100%;
+	height:40px;
+	background-color:#f9f9f9;
+}
+.left-title{
+	float:left;	
+	line-height:40px;
+	color:#666;
+	font-size:17px;
+	font-family:"宋体";
+}
+.right-nav{
+	float:right;
+	line-height:40px;
+}
+.right-nav::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.right-nav > li{
+	position:relative;
+	float:left;
+	font-size:14px;
+	padding-left:10px;
+}
+.right-nav > li:nth-child(8) > a{
+	background-color:#cc0000;
+	padding:1px 2px;
+	color:#fff;
+}
+.right-nav > li:nth-child(8) > a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+.right-nav > li > a{
+	color:#ccc;
+	padding-right:10px;
+}
+.right-nav > li > a:hover{
+	color:#cc0000;
+	text-decoration:underline;
+}
+.right-nav > li > span{
+	display:inline-block;
+	width:9px;
+	height:9px;
+	background-color:#ccc;
+	margin-left:14px;
+	cursor:pointer;
+}	
+.right-nav > li .fristtab{
+	background-color:#cc0000;
+}
+/* 标题盒子结束 */
+/*优惠推荐内容开始 */
+.prefer-ercomm .prefer-con{
+	width:100%;
+	background-color:#fff;
+	border:1px solid #ececec;
+}
+.prefer-con::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.prefer-con > li{
+	position:relative;
+	overflow:hidden;
+	float:left;
+	width:198px;
+	height:260px;
+	margin-left:2px;
+}
+.prefer-ercomm .left_btn{
+	top:128px;
+	left:0px;
+	width:27px;
+	height:60px;
+	background-position:0px -28px;
+	
+}
+.prefer-ercomm .right_btn{
+	top:128px;
+	right:0px;
+	width:27px;
+	height:60px;
+	background-position:-28px -28px;
+	
+}
+/*优惠推荐内容结束 */
+/*优惠推荐内容结束 */
+/* 酒馆开始 */
+.mainbox .wine-hose{
+	float:left;
+	width:100%;
+	margin-top:5px;
+	background-color:#fff;
+}
+ .wine-housecon{
+	width:100%;
+	height:485px;
+	border-left:1px solid #ececec;
+	border-right:1px solid #ececec;
+	border-bottom:1px solid #ececec;
+}
+ .wine-housecon .white-leftpic{
+	position:relative;
+	float:left;
+	width:210px;
+	height:485px;
+ }
+ .winehouse-tab{
+	position:absolute;
+	bottom:20px;
+	left:0px;
+	right:0px;
+	width:150px;
+	margin:auto;
+	z-index:10;
+}
+.winehouse-tab > span{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	background-color:#fff;
+	margin-left:15px;
+	border-radius:50%;
+}
+/* 酒馆内容 */
+.wine-housecon .winepavilbox{
+	float:left;
+	width:988px;
+	padding:5px 0 0 2px;
+}
+.winepavilbox:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.winepavilbox > li{
+	float:left;
+	overflow:hidden;
+	position:relative;
+	width:194px;
+	height:232px;
+	background-color:#fff;
+	margin-top:5px;
+	margin-left:1px;
+	border:1px solid #ececec;
+}
+.house-word{
+	overflow:hidden;
+	width:160px;
+	height:40px;
+	margin:auto;
+	font-size:12px;
+}
+.house-word > a{
+	color:#666;
+	line-height:18px;
+}
+.house-word > a:hover{
+	color:#cc0000;
+	text-decoration:underline;
+}
+.house-price{
+	display:block;
+	width:160px;
+	color:#cc0000;
+	font-size:12px;
+	margin:auto;
+}
+/* 酒馆结束 */
+/* 酒馆下排行榜盒子开始 */
+.mainbox .lsitbox{
+	width:100%;
+}
+.lsitbox::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+/* 左侧热门开始 */
+.lsitbox .left-hotbox{
+	float:left;
+	width:211px;
+	height:161px;
+	background-color:#f9f9f9;
+	border:1px solid #ececec;
+}
+.left-hotbox .hotboxcon{
+	width:185px;
+	margin:20px auto;
+}
+.hotboxcon > li .point{
+	display:inline-block;
+	width:3px;
+	height:3px;
+	background-color:#cc0000;
+	vertical-align:middle;
+}
+.hotboxcon > li > h3{
+	display:inline-block;
+	color:#cc0000;
+	font-size:14px;
+	font-family:"微软雅黑";
+}
+.hotboxcon > li > P{
+	padding-left:7px;
+}
+.hotboxcon > li > P > a{
+	display:inline-block;
+	padding-right:5px;
+	color:#666;
+	font-size:12px;
+}
+.hotboxcon > li > P > a:hover{
+	color:#cc0000;
+	text-decoration:underline;
+}
+/* 左侧热门结束 */
+/*右侧排行开始 */
+.lsitbox .right-prankbox{
+	float:right;
+	width:985px;
+	height:161px;
+	border:1px solid #ececec;
+}
+.right-prankbox::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+/* 标题开始 */
+.right-prankbox .pranktilteboX{
+	float:left;
+	width:100%;
+	height:30px;
+	background-color:#fff;
+}
+/* 左侧标题开始 */
+.pranktilteboX .left-Box{
+	float:left;
+}
+.left-Box .titlpic{
+	width:15px;
+	height:15px;
+	background-position:-38px 0px;
+	margin-left:5px;
+	margin:5px;
+	margin-right:1px;
+}
+.left-Box > span{
+	line-height:30px;
+	color:#cc0000;
+	font-size:12px;
+	font-weight:bold;
+}
+/* 左侧标题结束 */
+/* 右侧标题选项开始 */
+ .pranktilteboX .right-titletAb{
+	float:right;
+}
+.right-titletAb > li{
+	position:relative;
+	float:left;
+	line-height:30px;
+	font-size:12px;
+	margin-left:20px;
+	margin-right:5px;
+}
+.right-titletAb > li > a{
+	color:#666;
+}
+.right-titletAb > li > a:hover{
+	color:#CC0000;
+}
+.right-titletAb > li .tYpeline{
+	top:7px;
+	right:-9px;
+}
+/* 右侧标题选项结束 */
+/* 标题结束 */
+/* 排行内容开始 */
+.right-prankbox .winerankcon{
+	float:left;
+	width:100%;
+	background-color:#fff;
+}
+.winerankcon > li{
+	overflow:hidden;
+	float:left;
+	width:195px;
+	height:131px;
+	margin-left:2px;
+}
+.winerankcon > li .winerank_pic{
+	float:left;
+	width:90px;
+	height:90px;
+	background-color:#fff;
+	margin:20px 0px 10px 10px;
+}
+.winerankcon > li  .winerank_word{
+	float:right;
+	width:90px;
+	height:90px;
+	background-color:#fff;
+	margin:20px 2px 0 0px;
+}
+.winerank_word > p{
+	overflow:hidden;
+	width:75px;
+	height:35px;
+	font-size:12px;
+}
+.winerank_word > p > a{
+	color:#666;
+}
+.winerank_word > p > a:hover{
+	color:#cc0000;
+	text-decoration:underline;
+}
+.winerank_word > span{
+	color:#cc0000;
+	font-size:14px;
+}
+/* 排行内容结束 */
+/* 酒馆下排行榜盒子结束 */
+/* 白酒馆开始 */
+/* 雪碧图 */
+.wine_1F{
+	background-position:0px -95px;
+	
+}
+/* 线 */
+.f1line{
+	top:12px;
+	right:-3px;
+}
+/* 白酒馆上边框线 */
+.white{
+	border-top:2px solid #cc0000;
+}
+/* 左侧广告轮播 */
+.winehouse-tab .whiteone{
+	background-color:#fc5422;
+}
+/* 白酒馆结束 */
+/* 葡萄酒馆开始 */
+.wine_2F{
+	background-position:-30px -95px;
+}
+.bgc > a{
+	background-color:#c27b2f;
+	color:#fff;
+	padding:2px 1px;
+	
+}
+.grap{
+	border-top:2px solid #c27b2f;
+}
+.grapeone{
+	background-color:#c27b2f;
+}
+.grapword{
+	display:inline-block;
+	color:#c27b2f;
+	font-size:12px;
+	font-weight:bold;
+}
+.grappic{
+	width:15px;
+	height:15px;
+	background-position:-23px 0px;
+	margin-left:5px;
+	margin:5px;
+	margin-right:1px;
+}
+/* 葡萄酒馆结束 */
+/* 洋酒馆开始 */
+.foreignwine{
+	position:relative;
+	float:left;
+	width:210px;
+	height:322px;
+}
+.wine_3F{
+	background-position:-61px -95px;
+}
+.foreignborder{
+	border-top:2px solid #276594;
+}
+.foreignbgc > a{
+	background-color:#276594;
+	color:#fff;
+	padding:2px 1px;
+}
+/* 洋酒馆结束 */
+/* 养生酒&黄酒&啤酒开始 */
+.wine_4F{
+	background-position:-94px -95px;
+}
+.otherwine{
+	border-top:2px solid #72a314;
+}
+/* 养生酒&黄酒&啤酒结束 */
+/* 食品开始 */
+.wine_5F{
+	background-position:0px -207px;
+}
+.foodborder{
+	border-top:2px solid #fc7f66;
+}
+/* 食品结束 */
+/* logo墙开始 */
+/* logo墙开始 */
+.mainbox .logo-wallbox{
+	float:left;
+	width:100%;
+	margin-top:10px;
+}
+/* logo墙标题开始 */
+.logo-wallbox .logotltiebox{
+	width:100%;
+	height:40px;
+	background-color:#f9f9f9;
+}
+.logotltiebox .wallnav{
+	float:left;
+}
+.wallnav:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.wallnav .on{
+	position:relative;
+	float:left;
+	width:90px;
+	margin:0px 20px 0 10px;
+	line-height:40px;
+	text-align:center;
+	color:#666;
+	cursor:pointer;
+}
+.wallnav  .on:before{
+	display:block;
+	position:absolute;
+	bottom:0;
+	left:38px;
+	content:'';
+	border-left:7px solid transparent;
+	border-right:7px solid transparent;
+	border-top:7px solid transparent;
+	border-bottom:7px solid #cc0000;
+	opacity:0;
+	transition-delay:0.2s;
+}
+.wallnav .on:after{
+	display:block;
+	position:absolute;
+	bottom:0;
+	left:0px;
+	content:'';
+	width:100%;
+	height:0px;
+	border:1px solid #cc0000;
+	opacity:0;
+	transition-delay:0.2s;
+}
+.on:hover.on:after{
+	opacity:1;
+}
+.on:hover.on:before{
+	opacity:1;
+}
+/* logo墙标题结束 */
+/* 二级菜单单开始 */
+/*官方推荐开始 */
+.logosecond{
+	display:none;
+	position:absolute;
+	top:40px;
+	left:-2px;
+	width:1168px;
+	background-color:#fff;
+	z-index:10;
+}
+.logosecond > li{
+	overflow:hidden;
+	float:left;
+	width:180px;
+	height:80px;
+	margin-left:12px;
+	margin-top:15px;
+	margin-bottom:10px
+}
+.logosecond > li .logowall-pic{
+	transition-duration:1s;
+}
+.logosecond > li:hover  .logowall-pic{
+	margin-left:-100px;
+}
+.logo-wallbox .logowallconbox{
+	position:relative;
+	width:100%;
+	height:310px;
+	background-color:#fff;
+	border:1px solid #ececec;
+}
+.wallnav > li:nth-child(1):hover .logosecond{
+	display:block;
+}
+/*官方推荐结束 */
+/* 地方命名二级开始 */
+.third{
+	left:-122px;
+	background-color:#fff;
+}
+.wallnav > li:nth-child(2):hover .third{
+	display:block;
+}
+/* 地方命名二级结束 */
+/* 明星店铺开始 */
+.four{
+	left:-242px;
+	background-color:#fff;
+}
+.wallnav > li:nth-child(3):hover .four{
+	display:block;
+}
+/* 明星店铺结束 */
+/* 大牌旗舰店开始 */
+.five{
+	left:-362px;
+	background-color:#fff;
+}
+.wallnav > li:nth-child(4):hover .five{
+	display:block;
+}
+/* 大牌旗舰店结束 */
+/* 进口洋红酒开始 */
+.six{
+	height:315px;
+	left:-482px;
+	background-color:#fff;
+}
+.wallnav > li:nth-child(5):hover .six{
+	display:block;
+}
+/* 进口洋红酒结束 */
+.seven{
+	height:315px;
+	left:-601px;
+	background-color:#fff;
+}
+.wallnav > li:nth-child(6):hover .seven{
+	display:block;
+}
+.eight{
+	height:315px;
+	left:-722px;
+	background-color:#fff;
+}
+.wallnav > li:nth-child(7):hover .eight{
+	display:block;
+}
+/* 二级菜单单结束 */
+/* logo内容默认显示开始*/
+.default{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:7px;
+	width:1168px;
+	background-color:#fff;
+}
+.default > li{
+	overflow:hidden;
+	float:left;
+	width:180px;
+	height:80px;
+	margin-left:12px;
+	margin-top:15px;
+	margin-bottom:10px
+}
+.default > li .logowall-pic{
+	transition-duration:1s;
+}
+.default > li:hover  .logowall-pic{
+	margin-left:-100px;
+} 
+.left_Btn{
+	top:160px;
+	left:18px;
+	width:50px;
+	height:50px;
+	background-position:0 -130px;
+}
+.left_Btn{
+	top:160px;
+	left:18px;
+	width:50px;
+	height:50px;
+	background-position:0 -130px;
+}
+.right_Btn{
+	top:160px;
+	right:25px;
+	width:50px;
+	height:50px;
+	background-position:-56px -130px;
+}
+/* logo内容默认显示结束 */
+/* logo墙结束 */
+/* 精品店开始 */
+.mainbox .boutiqueBox{
+	float:left;
+	width:100%;
+	margin-top:15px;
+	background-color:#fff;
+}
+.i{
+	display:inline-block;
+	width:8px;
+	height:20px;
+	background-color:#f90;
+	margin-bottom:3px;
+	margin-right:10px;
+	vertical-align:middle;
+}
+.i1{
+	float:right;
+	width:10px;
+	height:10px;
+	background-color:#cc0000;
+	margin-top:20px;
+}
+.boutiqueBox .boutiqueconBox{
+	width:100%;
+	border:1px solid #ececec;
+}
+.boutiqueconBox::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+/*精品店左边开始 */
+.boutiqueconBox .boutiqueleftBox{
+	float:left;
+	width:590px;
+	height:130px;
+}
+.boutiqueleftBox > li{
+	width:580px;
+	height:60px;
+	background-color:#fff;
+	margin:3px auto;
+}
+.boutiquepic{
+	float:left;
+	display:inline-block;
+	width:100px;
+	height:60px;
+}
+.titlepic1{
+	background-image:url(../images/section/1.jpg);
+	background-repeat:no-repeat;
+}
+.boutiqueword{
+	float:left;
+	width:400px;
+	margin-left:10px;
+	margin-top:5px;
+	font-size:13px;
+}
+.boutiqueword > a{
+	position:relative;
+	padding:5px 22px 0 0px;
+	color:#666;
+	line-height:22px;
+}
+.boutiqueline{
+	top:7px;
+	right:7px;
+}
+.titlepic2{
+	background-image:url(../images/section/3.jpg);
+	background-repeat:no-repeat;
+}
+/*精品店左边开始 */
+/*精品店右边开始 */
+.boutiqueconBox .boutiquerightBox{
+	float:right;
+	width:590px;
+	height:130px;
+}
+.boutiquerightBox > li{
+	width:580px;
+	height:60px;
+	background-color:#fff;
+	margin:3px auto;
+}
+.titlepic3{
+	background-image:url(../images/section/2.jpg);
+	background-repeat:no-repeat;
+}
+.titlepic4{
+	background-image:url(../images/section/4.jpg);
+	background-repeat:no-repeat;
+}
+/*精品店右边结束 */
+/* 精品店结束 */
+/*中部第二部分结束 */

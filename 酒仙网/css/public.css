@@ -1,0 +1,527 @@
+@charset "utf-8";
+body,p,ul,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+	
+}
+
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+.fL{
+	float:left;
+}
+.fR{
+	float:right;
+}
+/*小三角形开始*/
+.triangle{
+	width:0px;
+	height:0;
+	border:5px solid #ccc;
+	border-bottom:none;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+}
+/* 雪碧图 */
+.sprites{
+	display:inline-block;
+	width:14px;
+	height:20px;
+	background-image:url(../images/xuebi/public-24.png);
+}
+/* 主题居中 */
+.content{
+	width:1200px;
+	margin:auto;
+}
+/* 线 */
+.line{
+	position:absolute;
+	width:0px;
+	height:15px;
+	border:0.5px solid #ccc;
+}
+/*优惠标记开始 */
+.tag{
+	position:absolute;
+	top:2px;
+	right:0px;
+	width:45px;
+	height:55px;
+	background-image:url(../images/section/TagBg.png);
+	color:#fff;
+	font-size:12px;
+	font-family:"微软雅黑"；
+}
+.tag > span {
+	display:block;
+	text-align:center;	
+}
+/*赠送标记结束 */
+/* 标题雪碧图片开始 */
+.titlepic{
+	display:inline-block;
+	background-image:url(../images/xuebi/newIndexIcon-24.png);
+	background-repeat:no-repeat;
+	margin-bottom:5px;
+	margin-right:10px;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+	vertical-align:middle;
+}
+/* 酒馆雪碧图 */
+.hosepic{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	background-image:url(../images/xuebi/newIndexIcon-24.png);
+	background-repeat:no-repeat;
+	margin-bottom:5px;
+	margin-right:8px;
+	color:#fff;
+	font-size:18px;
+	font-family:"宋体";
+	font-weight:bold;	
+	line-height:30px;
+	vertical-align:middle;
+}
+/*按钮雪碧图片 */
+.buttonpic{
+	display:block;
+	position:absolute;
+	background-image:url(../images/xuebi/newIndexIcon-24.png);
+	background-repeat:no-repeat;
+	cursor:pointer;
+
+}
+/* 标题图片介绍 */
+/* 酒图片开始 */
+.wine-pic{
+	width:160px;
+	height:160px;
+	margin:10px auto 0;
+}
+/* 酒图片结束 */
+/* 酒详情文字开始*/
+.wine-word{
+	overflow:hidden;
+	width:100%;
+	line-height:20px;
+	font-size:12px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.wine-word > a{
+	color:#666;
+}
+.wine-word > a:hover{
+	color:#cc0000;
+	text-decoration:underline;
+}
+/* 酒详情文字结束*/
+/* 酒价格开始*/
+.wine-prie{
+	margin-left:5px;
+	color:#cc0000;
+	font-size:14px;
+}
+/* 酒价格结束*/
+.pick{
+	display:inline-block;
+	width:75px;
+	height:18px;
+	background-image:url(../images/section/zhenxuan.jpg	);
+	background-repeat:no-repeat;
+	margin-left:5px;
+}
+/* 右边栏开始 */
+.R_sidebarBox{
+	position:fixed;
+	top:0;
+	right:0;
+	width:40px;
+	height:100%;
+	background-color:#fff;
+	box-shadow:-2px 0px 3px #ccc;
+	z-index:999;
+}
+.R_sidebarBox .sidebarmiddle{
+	position:absolute;
+	top:100px;
+	width:100%;
+}
+.sidebarmiddle > li{
+	position:relative;
+	width:100%;
+	padding-bottom:10px;
+	padding-top:8px;
+	cursor:pointer;
+	}
+/*我二级菜单开始 */
+.sidebarmiddle > li:nth-child(1) .my_second{
+	display:none;
+	position:absolute;
+	top:0;
+	left:-270px;
+	width:270px;
+	background-color:#f80;
+	box-shadow:0 0 5px #ececec;
+	
+}
+.my_second .mysecondtopcon{
+	width:100%;
+	height:110px;
+	background-color:#fff;
+	border:1px solid #e5e5e5;
+}
+ .logobox{
+	width:200px;
+	margin:10px auto 0;
+}
+.logo_pic{
+	display:inline-block;
+	width:80px;
+	height:80px;
+	background-image:url(../images/xuebi/sbbgg.jpg);
+	background-position:center;
+	margin-right:10px;
+	border-radius:50%;
+	border:5px solid #ffff;
+	box-shadow:0 0 3px #e5e5e5;
+	vertical-align:middle;
+}
+.logobox  span{
+	color:#666;
+	font-size:12px;
+}
+.logobox  span a{
+	color:#cc0000;
+	margin-left:5px;
+}
+.logobox  span a:hover{
+	text-decoration:underline;
+}
+.my_second .mysecondbottomcon{
+	width:100%;
+	background-color:#f9f9f9;
+}
+.mysecondbottomcon > li{
+	width:250px;
+	height:100px;
+	margin:auto;
+	border-bottom:1px dotted #e5e5e5;
+}
+.mysecondbottomcon > li:nth-child(2){
+	border:none;
+}
+.mysecondbottomcon > li p{
+	float:left;
+	width:100px;
+	margin:20px 10px;
+}
+.mysecondbottomcon > li p a{
+	display:block;
+	color:#666;
+	font-size:12px;
+	text-align:center;
+}
+.logo_i{
+	display:block;
+	width:26px;
+	height:26px;
+	background-image:url(../images/xuebi/public-24.png);
+	background-repeat:no-repeat;
+	margin:8px auto;
+}
+.logo_i1{
+	background-position:-64px -190px;
+}
+.logo_i2{
+	background-position:-96px -189px;
+}
+.logo_i3{
+	background-position:-158px -185px;
+}
+.logo_i4{
+	background-position:-158px -219px;
+}
+.sidebarmiddle > li:nth-child(1):hover .my_second{
+	display:block;
+}
+/*我二级菜单结束 */
+/*收藏二级菜单开始 */
+.sidebarmiddle > li:nth-child(2) .collecsecondtopcon{
+	display:none;
+	position:absolute;
+	top:0;
+	left:-272px;
+	width:270px;
+	height:110px;
+	background-color:#fff;
+	border:1px solid #e5e5e5;
+}
+.sidebarmiddle > li:nth-child(2):hover .collecsecondtopcon{
+	display:block;
+
+
+}
+/*收藏二级菜单结束 */
+ .sidebarmiddlepiC{
+	display:block;
+	width:19px;
+	height:19px;
+	background-image:url(../images/xuebi/public-24.png);
+	background-repeat:no-repeat;
+	margin:auto;
+}
+.my{
+	background-position:0px -163px;
+}
+.collec{
+	background-position:-40px -163px;
+}
+.shop{
+	background-position:-120px -163px;	
+}
+.user_pic{
+	background-position:-65px -329px;	
+}
+.frist_i{
+	background-position:1px -182px;
+}
+.second_i{
+	background-position:-19px -184px;
+}
+.third_i{
+	background-position:-40px -184px;
+}
+.sidebarmiddle > li  > span{
+	display:block;
+	font-size:14px;
+	text-align:center;
+	margin-top:2px;
+}
+.break{
+	width:14px;
+	word-break:break-all;
+	margin:auto;
+}
+.sidebarmiddle > li:hover{
+	background-color:#cc0000;
+	color:#fff;
+}
+.R_sidebarBox .sidebarbottompiC{
+	position:absolute;
+	bottom:15px;
+	width:100%;
+}
+.sidebarbottompiC > li{
+	padding:10px 0;
+	cursor:pointer;
+}
+
+.sidebarbottompiC > li:hover {
+	background-color:#cc0000;
+}
+.sidebarbottompiC > li:hover .frist_i{
+	background-position:3px -201px;
+	
+}
+.sidebarbottompiC > li:hover .second_i{
+	background-position:-19px -201px;
+	
+}
+.sidebarbottompiC > li:hover .third_i{
+	background-position:-40px -201px;
+	
+}
+.sidebarbottompiC > li p{
+	display:none;
+	position:absolute;
+	top:0px;
+	left:-86px;
+	width:85px;
+	height:40px;
+	background-color:#fff;
+	border:1px solid #e5e5e5;
+	color:#666;
+	font-size:12px;
+	text-align:center;
+	line-height:40px;
+	
+}
+.sidebarbottompiC > li:hover p{
+	display:block;
+}
+.sidebarbottompiC > li span{
+	display:none;;
+	position:absolute;
+	top:40px;
+	left:-81px;
+	width:80px;
+	height:80px;
+	background-image:url(../images/footer/jxPho-code.jpg);
+}
+.sidebarbottompiC > li:hover span2019/1/8{
+	display:block;
+}
+/* 右边栏结束 */
+/*左边栏开始 */
+.L_sidebarBox{
+	position:fixed;
+	top:280px;
+	left:40px;
+	width:40px;
+	z-index:90;
+}
+.L_sidebarBox .a_box{
+	position:relative;
+	display:block;
+	width:30px;
+	height:30px;
+	background-color:#f1f1f1;
+	margin:auto;
+	border-radius:50%;
+}
+.fixedpic{
+	position:absolute;
+	top:5px;
+	left:9px;
+	display:block;
+	width:12px;
+	height:20px;
+	background-image:url(../images/xuebi/newIndexIcon-24.png);
+	background-repeat:no-repeat;
+}
+.L_sidebarBox > .a1F{
+	position:absolute;
+	top:0px;
+	left:5px;
+	display:block;
+	width:30px;
+	height:30px;
+	background-color:#cc0000;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	line-height:30px;
+	white-space:nowrap;
+	border-radius:30px;
+	opacity:0;
+	transition-duration:1s;
+}
+.L_sidebarBox > .a2F{
+	position:absolute;
+	top:30px;
+	left:5px;
+	display:block;
+	width:30px;
+	height:30px;
+	background-color:#c2782f;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	line-height:30px;
+	white-space:nowrap;
+	border-radius:30px;
+	opacity:0;
+	transition-duration:1s;
+}
+.L_sidebarBox > .a3F{
+	position:absolute;
+	top:60px;
+	left:5px;
+	display:block;
+	width:30px;
+	height:30px;
+	background-color:#296693;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	line-height:30px;
+	white-space:nowrap;
+	border-radius:30px;
+	opacity:0;
+	transition-duration:1s;
+}
+.L_sidebarBox > .a4F{
+	position:absolute;
+	top:90px;
+	left:5px;
+	display:block;
+	width:30px;
+	height:30px;
+	background-color:#6c9d0e;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	line-height:30px;
+	white-space:nowrap;
+	border-radius:30px;
+	opacity:0;
+	transition-duration:1s;
+}
+.L_sidebarBox > .a5F{
+	position:absolute;
+	top:120px;
+	left:5px;
+	display:block;
+	width:30px;
+	height:30px;
+	background-color:#fe7a65;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	line-height:30px;
+	white-space:nowrap;
+	border-radius:30px;
+	opacity:0;
+	transition-duration:0.5s;
+}
+.f1{
+	background-position:0px -181px
+}
+.f2{
+	background-position:-18px -180px
+}
+.f3{
+	background-position:-33px -181px
+}
+.f4{
+	background-position:-56px -180px
+}
+.f5{
+	background-position:-39px -213px
+}
+.f6{
+	background-position:-75px -187px
+}
+.L_sidebarBox > .a1F:hover{
+	width:70px;
+	opacity:1;
+}
+.L_sidebarBox > .a2F:hover{
+	width:80px;
+	opacity:1;
+}
+.L_sidebarBox > .a3F:hover{
+	width:70px;
+	opacity:1;
+}
+.L_sidebarBox > .a4F:hover{
+	width:150px;
+	opacity:1;
+}
+.L_sidebarBox > .a5F:hover{
+	width:80px;
+	opacity:1;
+}
+.f6:hover{
+	background-position:-96px -185px
+}
+/*左边栏结束 */

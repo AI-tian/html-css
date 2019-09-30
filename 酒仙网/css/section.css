@@ -1,0 +1,652 @@
+@charset "utf-8";
+/*中部第一部分开始 */
+#section{
+	width:100%;
+}
+/* 中部导航开始 */
+#section .navwrap{
+	width:100%;
+	background-color:#990000;
+}
+.navwrap .navcon{
+	position:relative;
+	line-height:34px;
+}
+.navwrap .navcon::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.navwrap .navcon > h4{
+	width:190px;
+	background-color:#ce171f;
+	color:#fff;
+	font-size:14px;
+	font-family:"宋体";
+	text-align:center;
+}
+.navwrap .nav-list{
+	width:828px;
+
+}
+.nav-list > li{
+	float:left;
+	padding:0 25px;
+}
+.nav-list > li > a{
+	color:#fff;
+	font-size:14px;
+	font-family:'宋体';
+}
+.nav-list > li:nth-child(1){
+	background-color:#b40c10;
+}
+.nav-list > li:hover{
+	background-color:#b40c10;
+}
+/* 中部导航结束 */
+
+/* 中部导航右边礼品开始 */
+.navwrap .nav-right{
+	position:relative;
+	width:180px;
+
+}
+.nav-right .gift{
+	width:120px;
+	height:34px;
+	background-image:url(../images/section/gift.gif);
+
+}
+/* 中部导航右边礼品结束*/
+
+/* 中部左边侧边栏开始 */
+.navcon .side-left{
+	position:absolute;
+	top:34px;
+	left:0;
+	width:190px;
+	background-color:#fff;
+	z-index:999;
+}
+.side-left > li{
+	position:relative;
+	padding-bottom:2px;
+	border-bottom:1px solid #ccc;
+}
+.side-left > li > s{
+	display:none;	
+	position:absolute;
+	top:0;
+	left:0;
+	content:"";
+	width:0px;
+	height:100%;
+	border:2px solid #ce171f;
+	border-bottom:none;
+	border-top:none;
+	
+}
+.side-left > li > h3{
+	color:#333;
+	font-size:14px;
+	font-weight:normal;
+	line-height:30px;
+}
+.side-left > li > p{
+	line-height:25px;
+	font-size:12px;
+	margin-left:13px;
+}
+.side-left > li > p > a{
+	color:#666;
+	padding: 1px 3px;
+}
+.side-left > li > p span{
+	background-color:#f90;
+	padding:1px 2px;
+	color:#fff;
+	border-radius:1px;
+}
+/* 左侧导航栏小图标定位开始 */
+.side-left .side-ico1{
+	background-position:-73px -260px;
+	margin:5px 10px 0 13px;
+}
+.side-left .side-ico2{
+	background-position:0px -100px;
+	margin:5px 10px 0 13px;
+}
+.side-left .side-ico3{
+	background-position:-16px -102px;
+	margin:5px 10px 0 13px;
+}
+.side-left .side-ico4{
+	background-position:-37px -100px;
+	margin:5px 10px 0 13px;
+}
+.side-left .side-ico5{
+	background-position:-59px -100px;
+	margin:5px 10px 0 13px;
+}
+.side-left .side-ico6{
+	background-position:-79px -100px;
+	margin:5px 10px 0 13px;
+}
+/* 左侧导航栏小图标定位结束 */
+/* 左侧侧边栏hover开始 */
+.side-left > li:hover{
+	background-color:rgba(0,0,0,0.05);
+}
+.side-left > li:hover s {
+	display:block;
+}	
+/* 左侧侧边栏hover结束 */
+/* 中部左边侧边栏结束 */
+
+/* 中部左边侧边栏一键选择酒二级菜单开始 */
+/* 二级菜单左侧灰色标题盒子开始 */
+.left-gray{
+	float:left;	
+	width:100px;
+	height:100%;
+	background-color:#f1f1f1;
+}
+.left-gray > h5{
+	color:#333;
+	font-size:12px;
+	font-weight:normal;
+	text-align:right;
+	padding-right:15px;
+	margin-top:10px;
+
+}
+/*二级菜单左侧灰色标题盒子结束 */
+/* 二级菜单文字盒子开始 */
+.wordbox{
+	float:left;
+	width:300px;
+	height:100%;
+	/* background-color:#f80; */
+}
+.wordbox > p{
+	width:280px;
+	height:100%;
+/* 	background-color:#f10; */
+	margin:auto;
+	border-bottom:1px dotted #ccc;
+	font-size:12px;
+}
+.wordbox > p > a{
+	position:relative;
+	display:inline-block;
+	width:60px;
+	color:#666;
+	line-height:30px;
+	white-space:nowrap;
+}
+.wordbox > p > a:hover{
+	color:#cc0001;
+}
+.wordbox > p > a .site{
+	top:9px;
+	right:0px;
+
+}
+.wordbox > p > span > a{
+	position:relative;
+	display:inline-block;
+	width:60px;
+	color:#f90;
+	white-space:nowrap;
+}
+.wordbox > p > span .site{
+	top:11px;
+	right:3px;
+
+}
+/* 二级菜单文字盒子结束 */
+
+/* 一键选择酒二级菜单左侧内容开始 */
+.side-left > li:nth-child(1) .one-choose{
+	display:none;
+	position:absolute;
+	top:0;
+	left:190px;
+	width:615px;
+	box-shadow:0 0 4px #ccc;
+}
+.one-choose .choose-leftcon{
+	width:400px;
+}
+
+.choose-leftcon .feature{
+	width:100%;
+	height:100px;
+	background-color:#fff;
+}
+.choose-leftcon .select-room{
+	width:100%;
+	height:60px;
+	background-color:#fff;
+}
+.choose-leftcon .select-room:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.choose-leftcon .firm-use{
+	width:100%;
+	height:60px;
+	background-color:#fff;
+}
+.choose-leftcon .wine-zone{
+	width:100%;
+	height:60px;
+	background-color:#fff;
+}
+.choose-leftcon .fine{
+	width:100%;
+	height:190px;
+	background-color:#fff;
+}
+/* 一键选择酒二级菜单左侧内容结束 */
+
+/* 一键选择酒二级菜单右侧广告开始 */
+.one-choose .choose-rightcon{
+	width:215px;
+	height:470px;
+}
+/* 中部左边侧边栏一键选择酒二级菜单结束 */
+
+/* 白酒二级菜单开始 */
+.side-left > li:nth-child(2) .liquor{
+	display:none;
+	position:absolute;
+	top:-82px;
+	left:190px;
+	width:615px;
+	font-size:12px;
+	box-shadow:0 0 4px #ccc;
+}
+
+/* 品牌 开始*/
+.liquor .liquor-brand{
+	width:100%;
+	height:250px;
+	background-color:#fff;
+}
+/* 右侧品牌种类大盒子 */
+.liquor-brand .right-con{
+	float:left;
+	width:515px;
+	height:100%;
+
+}
+.right-con > p{
+	text-indent:15px;
+}
+.right-con > p > a{
+	position:relative;
+	color:#666;
+}
+.right-con > p >  a:nth-child(1){
+	background-color:#cc0001;
+	color:#Fff;
+	border-radius:2px;
+}
+.right-con > p >  a:nth-child(1) .on{
+	position:absolute;
+	bottom:-5px;
+	left:0;
+	right:0;
+	margin:auto;
+	border-top:5px solid #CC0001;
+}
+.right-con > p:nth-child(1) > a{
+	padding:1px 2px;
+}
+.right-con > p > a:hover{
+	background-color:#cc0001;
+	color:#Fff;
+	border-radius:2px;
+}
+/*品牌种类开始 */
+.right-con .species{
+	width:480px;
+	padding-bottom:15px;
+	border-bottom:1px dotted #ccc;
+	margin:auto;
+}
+.right-con .species > P{
+	line-height:25px;
+}
+.right-con .species > p > a{
+	display:inline-block;
+	text-align:left;
+	width:71px;
+	margin-left:5px;
+	color:#666;
+	white-space:nowrap;
+}
+.right-con .species > p .spec-tag > a{
+	display:inline-block;
+	width:71px;
+	margin-left:5px;
+	color:#f90;
+	white-space:nowrap;
+}
+.right-con .species > p > a:hover{
+	color:#cc0001;
+}
+/*品牌种类结束 */
+
+
+/* 品牌结束*/
+	
+/* 香型开始 */
+.liquor .liquor-scent{ 
+	width:100%;
+	height:60px;
+	background-color:#fff;
+}
+.liquor-scent > p{
+	float:left;
+	width:480px;
+	margin-left:20px;
+	line-height:29px;
+	border-bottom:1px dotted #ccc;
+}
+.liquor-scent > p > a{
+	position:relative;
+	display:inline-block;
+	width:50px;
+	color:#666;
+	line-height:20px;
+	white-space:nowrap;
+}
+.liquor-scent > p > a:hover{
+	color:#cc0001;
+}
+.liquor-scent > p s{
+	position:absolute;
+	top:3px;
+	right:-1px;
+	width:0px;
+	height:15px;
+	border:0.5px solid #ccc;
+}
+.liquor-scent .sec-tag > a{
+	position:relative;
+	display:inline-block;
+	width:50px;
+	color:#f90;
+	line-height:20px;
+}
+/* 香型结束 */
+
+/*产地开始 */
+.liquor .liquor-place{
+	width:100%;
+	height:60px;
+	background-color:#fff;
+}
+.liquor-place > p{
+	float:left;
+	width:480px;
+	margin-left:13px;
+	line-height:29px;
+	border-bottom:1px dotted #ccc;
+}
+.liquor-place > p > a{
+	position:relative;
+	display:inline-block;
+	width:33px;
+	color:#666;
+	line-height:20px;
+	white-space:nowrap;
+}
+.liquor-place > p > a:hover{
+	color:#CC0001;
+}
+.liquor-place > p s{
+	position:absolute;
+	top:3px;
+	right:-1px;
+	width:0px;
+	height:15px;
+	border:0.5px solid #ccc;
+}
+.liquor-place .place-tag > a{
+	position:relative;
+	display:inline-block;
+	width:33px;
+	color:#f90;
+	line-height:20px;
+}
+/*产地结束 */
+
+/* 价位开始 */
+.liquor .liquor-price{
+	width:100%;
+	height:100px;
+	background-color:#fff;
+}
+.liquor-price > p{
+	float:left;
+	width:480px;
+	margin-left:13px;
+	line-height:29px;
+}
+.liquor-price > p > a{
+	position:relative;
+	display:inline-block;
+	width:60px;
+	color:#666;
+	line-height:20px;
+	white-space:nowrap;
+}
+.liquor-price > p s{
+	position:absolute;
+	top:3px;
+	right:-2px;
+	width:0px;
+	height:15px;
+	border:0.5px solid #ccc;
+}
+.liquor-price > p > a:hover{
+	color:#CC0001;
+}
+/* 价位结束 */
+
+/* 白酒二级菜单结束*/
+
+/* 葡萄酒二级菜单开始 */
+.side-left > li:nth-child(3) .graprawine-second{
+	display:none;
+	position:absolute;
+	top:-166px;
+	left:190px;
+	width:615px;
+	box-shadow:0 0 4px #ccc;
+}
+/* 葡萄酒二级菜单左侧内容开始 */
+.graprawine-second .grapra-leftcon{
+	float:left;
+	width:400px;
+	background-color:#fff;
+}
+/* 红葡萄酒开始 */
+.grapra-leftcon .redgrapra{
+	width:100%;
+	height:40px;
+}
+/* 红葡萄酒结束 */
+/* 白葡萄酒开始 */
+.grapra-leftcon .whitegrapra{
+	width:100%;
+	height:45px;
+}
+/* 白葡萄酒结束 */
+
+/* 桃花葡萄酒开始 */
+.grapra-leftcon .peachgrapra{
+	width:100%;
+	height:45px;
+}
+/* 桃花葡萄酒结束 */
+.grapra-leftcon .bubblegrapra{
+	width:100%;
+	height:60px;
+}
+.grapra-leftcon .grapra-count{
+	width:100%;
+	height:95px;
+}
+.grapra-leftcon .grapra-brand{
+	width:100%;
+	height:60px;
+}
+.grapra-leftcon .grapra-var{
+	width:100%;
+	height:60px;
+}
+.grapra-leftcon .grapra-price{
+	width:100%;
+	height:65px;
+}
+/* 葡萄酒二级菜单左侧内容结束 */
+/* 葡萄酒二级菜单右侧广告开始 */
+.graprawine-second .grapra-rightcon{
+	float:right;
+	width:215px;
+	height:470px;
+	background-color:#0f0;
+}
+/* 葡萄酒二级菜单右侧广告结束 */
+/* 二级菜单hover显示开始 */
+.side-left > li:nth-child(1):hover .one-choose{
+	display:block;
+}
+.side-left > li:nth-child(2):hover .liquor{
+	display:block;
+}
+.side-left > li:nth-child(3):hover .graprawine-second{
+	display:block;
+}
+/* 二级菜单hover显示结束*/
+
+/* 中部右边侧边栏开始 */
+.navcon .side-right{
+	position:absolute;
+	top:34px;
+	left:-18px;
+	width:200px;
+	z-index:999;
+}
+.side-right > a{
+	display:block;
+	width:100%;
+	height:156px;
+	margin-bottom:1px;
+	opacity:0.9;
+}
+.side-right > a:nth-child(1){
+	background-image:url(../images/section/side-R1.jpg);
+}
+.side-right > a:nth-child(2){
+	background-image:url(../images/section/side-R2.png);
+}
+.side-right > a:nth-child(3){
+	background-image:url(../images/section/side-R3.png);
+}
+/* 中部右边侧边栏结束 */
+/*轮播图开始 */
+#section .shuffbox{
+	position:relative;
+	width:100%;
+	height:470px;
+	z-index:99;
+}
+.shuffbox .shuffbg{
+	position:relative;
+	width:100%;
+	height:100%;
+	background-color:#f20
+}
+.shuffbox .shuffbg > a{
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.shuffbox .shuff-con{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;	
+	height:470px;
+	background-color:#f40;
+}
+.shuff-con > a{
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.shuff-con > a:nth-child(1){
+	background-image:url(../images/section/shuff5.jpg);
+	background-position:top center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.shuff-con > a:nth-child(2){
+	background-image:url(../images/section/shuff4.jpg);
+	background-position:top center;
+}
+.shuff-con > a:nth-child(3){
+	background-image:url(../images/section/shuff3.jpg);
+	background-position:top center;
+}
+.shuff-con > a:nth-child(4){
+	background-image:url(../images/section/shuff2.jpg);
+	background-position:top center;
+}
+.shuff-con > a:nth-child(5){
+	background-image:url(../images/section/shuff1.jpg);
+	background-position:top center;
+	background-position:top center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+/*轮播图选项卡开始 */
+.shuff-con .shuff-tab{
+	position:absolute;
+	left:0;
+	bottom:20px;
+	right:0;
+	margin:auto;
+	width:300px;
+
+}
+.shuff-tab > span{
+	display:inline-block;
+	width:20px;
+	height:20ppx;
+	background-color:rgba(0,0,0,0.5);
+	margin:0 4px;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	border-radius:50%;
+	cursor:pointer;
+	box-shadow:0 0 3px #ccc;
+}
+.shuff-tab > span:hover{
+	background-color:#cc0001;
+/*轮播图结束 */
+/* 中部第一部分结束 */

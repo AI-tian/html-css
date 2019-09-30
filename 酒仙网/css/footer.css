@@ -1,0 +1,249 @@
+@charset "utf-8";
+/*底部开始 */
+.footer{
+	float:left;
+	width:100%;
+	margin-top:10px;
+}
+/* 热线开始 */
+.footer .hlotlineBox{
+	width:100%;
+	height:300px;
+	background-color:#333;
+}
+
+.hotlineconbox{
+	height:300px;
+	background-color:#333;
+}
+.hotlineconbox .emailbox{
+	width:100%;
+	height:90px;
+	background-color:#333;
+	border-bottom:1px solid #494949;
+	line-height:90px;
+}
+.iphonepic{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	background-image:url(../images/xuebi/public-24.png);
+	background-position:-144px -22px;
+	margin-bottom:8px;
+	vertical-align:middle;
+}
+.emailbox > b{
+	color:#cc0000;
+	font-size:24px;
+	margin:0 10px;
+	vertical-align:middle;
+}
+.emailbox > span{
+	color:#fff;
+	margin-right:5px;
+}
+.emailbox .email_rightbox{
+	float:right;
+}
+.email_rightbox > span{
+	color:#fff;
+	font-size:14px;
+}
+.email_rightbox .emailwrap{
+	float:right;
+	width:230px;
+	background-color:#333;
+	border:1px solid #494949;
+	margin-top:28px;
+	margin-left:15px;
+}
+.emailwrap .emailinput{
+	float:left;
+	outline:none;
+	width:190px;
+	height:30px;
+	background-color:#333;
+	border:none;
+	color:#ccc;
+	font-size:12px;
+	text-indent:1em;
+}
+.emailbtn{
+	float:right;
+	display:inline-block;
+	width:22px;
+	height:18px;
+	background-image:url(../images/xuebi/public-24.png);
+	background-position:-133px 0px;
+	margin-top:5px;
+	cursor:pointer;
+}
+/* 其他链接方式开始 */
+.hlotlineBox .other-way{
+	width:100%;
+}
+ .other-way::after{
+	content:'';
+	display:block;
+	clear:both;
+ }
+.other-way > li{
+	float:left;
+	width:140px;
+	margin-left:30px;
+	margin-top:40px;
+}
+.waypic{
+	display:inline-block;
+	width:28px;
+	height:28px;
+	background-image:url(../images/xuebi/public-24.png);
+	background-repeat:no-repeat;
+	vertical-align:middle;
+	margin-bottom:8px;
+	margin-right:10px;
+}
+.title_pic1{
+	background-position:0px -131px;
+}
+.title_pic2{
+	background-position:-30px -131px;
+}
+.title_pic3{
+	background-position:-60px -131px;
+}
+.title_pic4{
+	background-position:-90px -131px;
+}
+.title_pic5{
+	background-position:-120px -131px;
+}
+.title_pic6{
+	background-position:-150px -131px;
+}
+.title_pic7{
+	background-position:-140px -74px;
+}
+.title_pic8{
+	background-position:-103px -74px;
+}
+
+.other-way > li > h5{
+	color:#fff;
+	font-size:15px;
+	font-weight:normal;
+}
+.other-way > li > h6{
+	position:relative;
+	color:#fff;
+	font-size:14px;
+	font-weight:normal;
+}
+.other-way > li > h6 > a{
+	color:#fff;
+}
+.other-way > li > P{
+	font-size:12px;
+	text-align:center;
+	line-height:25px;
+}
+.other-way > li > P > a{
+	color:#ccc;
+}
+.other-way > li > P > a:hover{
+	text-decoration:underline;
+}
+.Qrpic{
+	display:none;
+	position:absolute;
+	top:25px;
+	left:39px;
+	width:80px;
+	height:80px;
+	background-image:url(../images/header/jxPho-code.jpg)
+}
+.other-way > li > h6:nth-child(2):hover .Qrpic{
+	display:block;
+}
+/* 其他链接方式结束 */
+/* 热线开始 */
+/* 公司简介开始 */
+.footer .companyBox{
+	width:100%;
+	height:300px;
+	background-color:#f9f9f9;
+}
+.companyconB0x::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.companyconB0x .left_company{
+	float:left;
+	width:800px;
+}
+.left_company .left_contop{
+	margin:20px 0 30px 0;
+}
+.left_contop > P{
+	color:#666;
+	font-size:13px;
+}
+.left_contop > P > a{
+	position:relative;
+	color:#666;
+	font-size:13px;
+	padding-right:10px;
+	padding-left:3px;
+}
+.left_contop > P > a:hover{
+	color:#cc0000;
+	text-decoration:underline;
+}
+.companyline{
+	top:0;
+	right:0;
+}
+.left_conbottom > P{
+	color:#ccc;
+	font-size:12px;
+	margin:7px 0;
+}
+.left_conbottom > h6{
+	color:#cc0000;
+	font-size:12px;
+	font-weight:normal;
+}
+.left_conbottom > span{
+	display:inline-block;
+	margin:10px 5px;
+}
+
+.left_conbottom > P > a{
+	position:relative;
+	color:#ccc;
+	font-size:12px;
+	padding-right:10px;
+	padding-left:3px;
+}
+.left_conbottom > P > a:hover{
+	color:#cc0000;
+	text-decoration:underline;
+}
+.companyconB0x .right_company{
+	float:left;
+	margin:30px 0 0 20px;
+}
+.jiuxiphoneqr{
+	float:left;
+	width:80px;
+	margin-left:10px;
+}
+.jiuxiphoneqr > p{
+	color:#666;
+	font-size:12px;
+	text-align:center;
+	line-height:20px;
+}
+/* 公司简介结束 */
+/*底部结束 */
